@@ -1,0 +1,64 @@
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+article section{
+    border:3px dotted rgb(185, 73, 73);
+    background-color: rgb(128, 210, 128);
+    flex: 1 1 0%;
+    margin:auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+    padding: 2%;
+    text-align: center;
+}
+
+
+@media (max-width:500px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article{
+        width:100%;
+    }
+
+    article section{
+        border:2px dotted rgb(185, 73, 73);
+        background-color: salmon;
+        flex: 1 1 100%; 
+        margin:auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+    }
+
+    aside{
+        display: none;
+    }
+}
+
+
+@media (max-width:800px) and (min-width:501px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    article section{
+        border:2px dotted rgb(185, 73, 73);
+        background-color: rgb(207, 207, 73);
+        flex: 1 1 30%; 
+        text-align:center;
+    }
+}
